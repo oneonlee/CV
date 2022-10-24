@@ -10,7 +10,6 @@
 
   <title>이동건 | Lee Dong-geon</title>
 
-
   <!--Favicon-->
   <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon.ico/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon.ico/apple-icon-60x60.png">
@@ -203,13 +202,16 @@
                     Python,
                   </button></li>
                 <li class="col-item"><button class="stack-item">
-                    KoNLPy,
+                    Machine Learning,
                   </button></li>
                 <li class="col-item"><button class="stack-item">
-                    Deep-Learning,
+                    Data Analysis,
                   </button></li>
                 <li class="col-item"><button class="stack-item">
-                    Data Analysis
+                    Deep Learning,
+                  </button></li>
+                <li class="col-item"><button class="stack-item">
+                    KoNLPy
                   </button></li>
               </ul>
             </div>
@@ -243,7 +245,7 @@
                       </div>
                       <div class="resume-card-right">
                         <h4 class="resume-card-item-label">
-                          주식회사잼코딩
+                          ㈜잼코딩
                           <!---->
                         </h4>
                         <h5 class="resume-card-item-text">
@@ -274,17 +276,7 @@
                         <ul class="list-contributions">
                           <li class="list-contribution-item">
                             <h5 class="part-title">
-                              C언어 프로그래밍 및 알고리즘 수업
-                            </h5>
-                            <h6 class="part-period">
-                              2022-07
-                              ~ 현재
-                            </h6>
-                            <!---->
-                          </li>
-                          <li class="list-contribution-item">
-                            <h5 class="part-title">
-                              데이터 분석 수업
+                              데이터 분석 및 시각화 수업
                             </h5>
                             <h6 class="part-period">
                               2022-03
@@ -299,6 +291,16 @@
                             <h6 class="part-period">
                               2021-11
                               ~ 2022-06
+                            </h6>
+                            <!---->
+                          </li>
+                          <li class="list-contribution-item">
+                            <h5 class="part-title">
+                              C언어 프로그래밍 및 알고리즘 수업
+                            </h5>
+                            <h6 class="part-period">
+                              2022-07
+                              ~ 현재
                             </h6>
                             <!---->
                           </li>
@@ -464,20 +466,21 @@
                           <div class="">
                             <div class="">
                               <ul>
-                                <li><code data-backticks="1">Google Developer Student Clubs Inha</code> 프로그램 참여</li>
+                                <li><code data-backticks="1">Google Developer Student Clubs Inha</code> 프로그램 참여
+                                  <ul>
+                                    <li>AI 스터디 참여</li>
+                                  </ul>
+                                </li>
                                 <li>교내 컴퓨터 수학 소모임 <code data-backticks="1">MOD777</code> 활동
                                   <ul>
-                                    <li>파이썬 멘토링 멘토 참가</li>
-                                    <li>웹개발 스터디</li>
-                                    <li>딥러닝 논문 리뷰 스터디</li>
-                                    <li>파이썬 라이브러리 스터디</li>
+                                    <li>파이썬 멘토링 프로그램 멘토</li>
+                                    <li>딥러닝 논문 리뷰 스터디, 파이썬 라이브러리 스터디, 웹개발 스터디</li>
                                   </ul>
                                 </li>
                                 <li>교내 프로그래밍 소모임 <code data-backticks="1">인트아이</code> 활동
                                   <ul>
                                     <li>간부활동 (스터디 관리 및 기획, 인원 관리)</li>
-                                    <li>C++ 스터디 참여</li>
-                                    <li>소모임 내 해커톤 참여</li>
+                                    <li>C++ 스터디, 해커톤 등 참여</li>
                                   </ul>
                                 </li>
                               </ul>
@@ -885,7 +888,7 @@
                   </div>
                   <div class="resume-card-footer"></div>
                 </section>
-                <section class="resume-card shrinked">
+                <!-- <section class="resume-card shrinked">
                   <div class="resume-card-header">
                     <div class="resume-card-left">
                       <h4 class="resume-card-header-title">
@@ -893,23 +896,19 @@
                       </h4>
                     </div>
                     <div class="resume-card-right">
-                      <!---->
                     </div>
                   </div>
                   <div class="resume-card-body">
-                    <!---->
                     <div class="resume-card-item foreignLanguage">
-                      <!---->
                       <div class="resume-card-right">
                         <h4 class="resume-card-item-label">
                           영어
                         </h4>
-                        <!---->
                       </div>
                     </div>
                   </div>
                   <div class="resume-card-footer"></div>
-                </section>
+                </section> -->
                 <!---->
                 <!---->
               </div>
@@ -999,72 +998,6 @@
 
       <script src="./src/loader(1).js" type="text/javascript"></script>
 
-      <script type="text/javascript">
-        Sentry.init({
-          environment: "production",
-          dsn: "https://96f9fc1ff3f44acbb98a9c156338d14b@o1070092.ingest.sentry.io/6136918",
-          integrations: [new Sentry.Integrations.BrowserTracing()],
-          initialScope: {
-            code_version: "f98c577a0973000ab1995e5a9b15540898d0ac4f",
-            user: {
-              id: 230811,
-              username: "이*건",
-              email: "le********@gmail.com"
-            },
-          },
-          // Set tracesSampleRate to 1.0 to capture 100%
-          // of transactions for performance monitoring.
-          // We recommend adjusting this value in production
-          tracesSampleRate: 0.01,
-          beforeSend: function beforeSend(event) {
-            const firstException = (event.exception && event.exception.values || [])[0];
-            const isBuggyBrowser = /Chrome\/10[2-4]/.test(navigator.userAgent);
-            const error = event.exception && event.exception.values && event.exception.values[0];
-            const isKnownBrowserBug =
-              isBuggyBrowser &&
-              (error && error.type === 'EvalError' &&
-                error.value && error.value.includes('Possible side-effect in debug-evaluate')) ||
-              (error && error.type === 'SyntaxError' && error.value &&
-                (error.value.includes('Unexpected end of input') ||
-                  error.value.includes('Unexpected token \'{\'') ||
-                  error.value.includes('Unexpected token \'}\'') ||
-                  error.value.includes('Unexpected token \'(\'') ||
-                  error.value.includes('Unexpected token \')\'') ||
-                  error.value.includes('Unexpected token \'[\'') ||
-                  error.value.includes('Unexpected token \']\'') ||
-                  error.value.includes('Invalid or unexpected token') ||
-                  error.value.includes('missing ) after argument list')));
-
-            if (firstException) {
-              const mechanism = firstException.mechanism;
-              const stacktrace = firstException.stacktrace;
-              const isOnError = () => mechanism && mechanism.type === 'onerror';
-              const hasAnonymousFilename = () => Boolean(
-                stacktrace && stacktrace.frames && stacktrace.frames.some(
-                  ({ filename }) => filename && filename.includes('anonymous'),
-                ),
-              );
-
-              /* console의 예외는 sentry에 보내지 않는다. #4226 */
-              if (isOnError() && hasAnonymousFilename())
-                return null;
-            }
-
-            if (isKnownBrowserBug) {
-              return null;
-            }
-            return event;
-          },
-        });
-      </script>
-
-      <!-- Google Tag Manager (noscript) -->
-      <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT8HLJD" height="0" width="0"
-          style="display:none;visibility:hidden"></iframe>
-      </noscript>
-      <!-- End Google Tag Manager (noscript) -->
-
       <script type="text/javascript" charset="utf-8">
         window.addEventListener('afterprint', function () {
           $.ajax({
@@ -1076,19 +1009,6 @@
           })
         })
       </script>
-
-
-
-
-      <noscript>
-        이 사이트의 기능을 모두 활용하기 위해서는 자바스크립트를 활성화할 필요가 있습니다.
-        <a href="http://www.enable-javascript.com/ko/" target="_blank">
-          브라우저에서 자바스크립트를 활성화하는 방법</a>을 참고하세요.
-      </noscript>
-
-
-
-
       <div id="snackbar-container"></div>
 </body>
 
